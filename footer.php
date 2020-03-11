@@ -1,5 +1,5 @@
 <footer>
-    <p>This is a temporary footer</p>
+    <p id="footer-p">Created by: Kelly DeMent</p>
 </footer>
 
     <?php wp_footer(); ?>

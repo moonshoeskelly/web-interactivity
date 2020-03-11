@@ -40,4 +40,26 @@ Get featured image
 ====================================*/
 
 add_theme_support('post-thumbnails');
+
+/*===================================
+
+Adds widget areas to theme
+
+====================================*/
+
+function blank_widgets_init(){
+    register_sidebar (array(
+        'name'          => ('Right Header'),
+        'id'            => 'right-header',
+        'description'   => 'Right widget area in header',
+        'before_widget' => '<div class="widget-header">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="header-widget-title">',
+        'after_title'   => '</h3>'
+    ));
+}
+
+add_action('widgets_init', 'blank_widgets_init');
+
+
 ?>

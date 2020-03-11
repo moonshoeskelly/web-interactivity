@@ -9,14 +9,16 @@
                     the_post(); ?>
 
                     <h2 class="entry-title"><?php the_title(); ?></h2>
-                    
+
                     <div class="single-post-featured-image">
                         <?php the_post_thumbnail('large'); ?>
                     </div>
 
                     <p class="post-information"><?php echo "<span class='bold'>Published</span> " . get_the_date(); echo " | "; echo "<span class='bold'>Written by</span> " . get_the_author(); ?></p>
 
-                    <p><?php the_content(); ?></p>
+                    <div class="post-text">
+                        <p><?php the_content(); ?></p>
+                    </div>
 
                 </div>
             <?php

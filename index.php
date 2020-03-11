@@ -1,28 +1,26 @@
 <?php get_header(); ?>
 
     <h1><?php bloginfo('description') ?></h1>
-    <p>WordPress Site</p>
     <div class="container">
         <div class="row">
             <?php
             if(have_posts()){
                 while(have_posts()){
                     the_post(); ?>
-                    <div class="col-md-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 post-col">
+                        <div class="col-border">
+                            <div class="post-featured-image">
+                                <?php the_post_thumbnail('medium'); ?>
+                            </div>
 
-                        <div class="post-featured-image">
-                            <?php the_post_thumbnail('medium'); ?>
+                            <h3><?php the_title(); ?></h3>
+
+                            <p class="post-info"><?php echo "<span class='bold'>Published:</span> " . get_the_date(); echo "<br /><span class='bold'>Written by:</span> " . get_the_author(); ?></p>
+
+                            <p class="post-excerpt"><?php the_excerpt(); ?></p>
+
+                            <a class="btn btn-primary btn-sm" href="<?php the_permalink(); ?>">Read more</a>
                         </div>
-
-                        <h3><?php the_title(); ?></h3>
-
-                        <p class="post-info"><?php echo "Published " . get_the_date(); echo " | "; echo "Written by: " . get_the_author(); ?></p>
-
-
-                        <p><?php the_excerpt(); ?></p>
-
-                        <a class="btn btn-primary btn-sm" href="<?php the_permalink(); ?>">Read more >></a>
-
                     </div>
 
             <?php

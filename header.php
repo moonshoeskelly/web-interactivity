@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-witdh, initial-scale-1.0">
 
+    <link href="https://fonts.googleapis.com/css?family=Katibeh|Roboto&display=swap" rel="stylesheet">
+
     <title><?php bloginfo('name'); ?></title>
 
     <?php wp_head(); ?>
@@ -21,10 +23,13 @@
                     <?php } ?>
                 </div>
 
-                <div class="col-lg-9 d-flex align-items-center">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
                     <nav>
-                        <p><a href="#">Navigation goes here</a></p>
+                        <p><a id="home-link" href="<?php echo home_url(); ?>">Home</a></p>
                     </nav>
+                </div>
+                <div class="col-lg-3">
+                    <?php dynamic_sidebar('right-header'); ?>
                 </div>
             </div>
         </div>

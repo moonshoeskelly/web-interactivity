@@ -13,6 +13,12 @@ Text Domain: web_interactivity
 Universal Styling
 
 ==================================*/
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -24,7 +30,13 @@ Header
 ==================================*/
 
 header {
-    background: black;
+    background: #4c8eea;
+}
+
+#home-link {
+    font-size: 2rem;
+    color: navy;
+    font-family: 'Katibeh', serif;
 }
 
 header img {
@@ -39,7 +51,33 @@ Body
 ==================================*/
 
 h1 {
-    color: blue;
+    text-align: center;
+    color: navy;
+    padding: 20px 3%;
+    font-family: 'Katibeh', serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Katibeh', serif;
+    font-size: 2.75rem;
+    margin: 0;
+}
+
+h3 {
+    padding-top: 10px;
+    font-family: 'Katibeh', serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 /*=================================
@@ -47,7 +85,85 @@ h1 {
 Index.php Template
 
 ==================================*/
+
+.col-border {
+    padding:  20px 3%;
+    border: 2px solid navy;
+    margin: 10px 2% 20px 2%;
+}
+
 .post-featured-image img {
     max-width: 225px;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.post-info {
+    font-size: .9rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-top: 15px;
+    background: #4c8eea;
+}
+
+/*=================================
+
+Single.php Template
+
+==================================*/
+
+.single-post-featured-image img {
+    max-width: 800px;
+    width: 90%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.post-information {
+    font-size: .9rem;
+    margin-bottom: 15px;
+}
+
+.post-text {
+    max-width: 720px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.post-text p {
+    padding-bottom: 10px;
+}
+
+/*=================================
+
+404.php Template
+
+==================================*/
+.footer-p {
+    margin-left: 5%;
+}
+
+/*=================================
+
+Footer
+
+==================================*/
+
+footer {
+    background: #4c8eea;
+    margin-top: 20px;
+}
+
+#footer-p {
+    color: navy;
+    padding: 20px 3%;
+    margin: 0;
+    text-align: center;
+    font-family: 'Katibeh', serif;
+    font-size: 1.25rem;
 }
