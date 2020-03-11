@@ -1,0 +1,53 @@
+/*
+Theme Name: Web Interactivity & Engagement Theme
+Theme URI:
+Author: Kelly DeMent
+Description: This theme is a practice theme for the Web Interactivity course of UF
+Version: 1.0
+License: Open
+Text Domain: web_interactivity
+*/
+
+/*=================================
+
+Universal Styling
+
+==================================*/
+.bold {
+    font-weight: bold;
+}
+
+/*=================================
+
+Header
+
+==================================*/
+
+header {
+    background: black;
+}
+
+header img {
+    max-width: 150px;
+    object-fit: contain;
+}
+
+/*=================================
+
+Body
+
+==================================*/
+
+h1 {
+    color: blue;
+}
+
+/*=================================
+
+Index.php Template
+
+==================================*/
+.post-featured-image img {
+    max-width: 225px;
+    object-fit: cover;
+}
