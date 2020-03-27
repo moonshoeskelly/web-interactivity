@@ -15,7 +15,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <?php if(get_header_image() == ''){?>
                         <h1><a href="<?php get_home_url();?>"><?php bloginfo('name'); ?></a></h1><?php
                     }else{?>
@@ -23,12 +23,18 @@
                     <?php } ?>
                 </div>
 
-                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
                     <nav>
-                        <p><a id="home-link" href="<?php echo home_url(); ?>">Home</a></p>
+                        <?php
+                        if(has_nav_menu('top-menu')){
+                            wp_nav_menu (array('theme_location' => 'top-menu' , 'container_class' => 'top-menu-class'));
+                        }else{
+                            echo "Please select a top memu through the dashboard";
+                        }
+                        ?>
                     </nav>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3 justify-content-center d-flex align-items-center">
                     <?php dynamic_sidebar('right-header'); ?>
                 </div>
             </div>

@@ -13,14 +13,16 @@ Text Domain: web_interactivity
 Universal Styling
 
 ==================================*/
-* {
-    margin: 0;
-	padding: 0;
-	border: 0;
-}
-
 .bold {
     font-weight: bold;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.container {
+    background: white;
 }
 
 /*=================================
@@ -28,9 +30,12 @@ Universal Styling
 Header
 
 ==================================*/
-
 header {
     background: #4c8eea;
+}
+
+header .container {
+    background: transparent;
 }
 
 #home-link {
@@ -42,6 +47,19 @@ header {
 header img {
     max-width: 150px;
     object-fit: contain;
+}
+
+.top-menu-class li {
+    display: inline;
+}
+
+.top-menu-class a {
+    color: #046c59;
+    margin: 0 1rem;
+}
+
+.widget-header label {
+    display: none;
 }
 
 /*=================================
@@ -111,6 +129,52 @@ Index.php Template
 
 /*=================================
 
+Homepage Styling
+
+==================================*/
+.widget-hero-image img {
+    width: 100%;
+}
+
+h3.about-us-widget-title {
+    text-transform: uppercase;
+}
+
+.widget-about-us {
+    margin: 40px 20px;
+}
+
+.widget-bottom-right #wp-calendar {
+    width: 100%;
+}
+
+.widget-bottom-right #wp-calendar th[scope="col"] {
+    background: #f2f2;
+    text-align: center;
+}
+
+.widget-bottom-right #wp-calendar td {
+    text-align: center;
+}
+
+.widget-bottom-left img,
+.widget-bottom-middle img {
+    min-width: 300px;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+/*=================================
+
+Single Page/Post Styling
+
+==================================*/
+.entry-title {
+    margin: 20px 0 10px;
+}
+
+/*=================================
+
 Single.php Template
 
 ==================================*/
@@ -150,6 +214,22 @@ Single.php Template
 
 /*=================================
 
+Aside Styling
+
+==================================*/
+
+aside {
+    background: #b3b3b3;
+}
+
+aside .widget-default-sidebar,
+aside .widget-left-sidebar,
+aside .widget-right-sidebar {
+    margin: 20px 0;
+}
+
+/*=================================
+
 Footer
 
 ==================================*/
@@ -157,6 +237,16 @@ Footer
 footer {
     background: #4c8eea;
     margin-top: 20px;
+    padding: 50px 0;
+}
+
+footer .container {
+    background: transparent;
+}
+
+footer nav .menu a {
+    color: #046c59;
+    margin: 0 1rem;
 }
 
 #footer-p {
