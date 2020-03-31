@@ -108,6 +108,7 @@ Index.php Template
     padding:  20px 3%;
     border: 2px solid navy;
     margin: 10px 2% 20px 2%;
+    width: 100%;
 }
 
 .post-featured-image img {
@@ -125,6 +126,10 @@ Index.php Template
 .btn {
     margin-top: 15px;
     background: #4c8eea;
+}
+
+.individual-post {
+    display: flex;
 }
 
 /*=================================
@@ -210,6 +215,21 @@ Single.php Template
 ==================================*/
 .footer-p {
     margin-left: 5%;
+}
+
+/*=================================
+
+Checkout Page Template
+
+==================================*/
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    float: left;
+    max-width: 48%;
+}
+
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    float: right;
+    max-width: 48%;
 }
 
 /*=================================
